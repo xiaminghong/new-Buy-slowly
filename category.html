@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/category.css">
+
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+        <a href="index.html">
+          <div  class="mmm_logo fl">
+          </div>
+        </a>
+      
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="mmm_search">
+      <input type="text" placeholder="请输入你想比对的商品">
+      <input type="button" value="搜索">
+    </div>
+
+    <!-- 电器 -->
+    <div class="mmm_category">
+      <ul class="uls">
+        <li>
+          <a class="a" href="#">家电</a>
+          <div class="mmm_category_O">
+            <!-- <ul class="clearfix">
+              <li>
+                <a href="#">电视</a>
+              </li>
+              <li>
+                <a href="#">空调</a>
+              </li>
+              <li>
+                <a href="#">影视</a>
+              </li>
+              <li>
+                <a href="#">影视</a>
+              </li>
+            </ul> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</body>
+
+<script type="text/html" id="category_outer">
+
+  {{each result v i}}
+
+  <li data-id='{{v.titleId}}'>
+    <a class="a" href="#">{{v.title}}</a>
+    <div class="mmm_category_O">
+    </div>
+  </li>
+
+  {{/each}}
+
+
+
+</script>
+
+<script type="text/html" id="category_inner">
+
+
+  <ul class="clearfix">
+    {{each result v i}}
+    <li>
+      <a href="#">{{v.category}}</a>
+    </li>
+    {{/each}}
+ 
+  </ul>
+
+
+</script>
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/category.js"></script>
+
+</html>

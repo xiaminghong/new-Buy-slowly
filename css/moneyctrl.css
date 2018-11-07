@@ -1,0 +1,183 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+.mmm_container {
+  width: 100%;
+  /* border: 1px solid #000; */
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* 头部  */
+.mmm_header {
+  height: 50px;
+  width: 100%;
+  background: #ff841d;
+  box-sizing: border-box;
+  position: relative;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* 箭头 */
+.mmm_header .mmm_arrows{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  font-size: 30px;
+  font-family: "宋体";
+  color: #fff;
+  text-align: center;
+  /* padding-top: 10px; */
+}
+.mmm_header a{
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  display: block;
+  color: #fff;
+}
+/* 头部字体 */
+.mmm_header .mmm_discounts{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+/* 下载 */
+.mmm_header .mmm_download {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: url('../images/header_app.png') no-repeat 10px center;
+  background-size: 34px 34px;
+}
+
+
+/* 超值折扣推荐 */
+.mmm_title_head {
+  height: 35px;
+  line-height: 20px;
+  width: 100%;
+  background: #ff9000;
+}
+.mmm_title_head span:first-child {
+  font-size: 16px;
+  color: #fff;
+  padding-left: 10px;
+}
+.mmm_title_head img {
+  width: 20px;
+  padding-top: 7px;
+  padding-right: 5px;
+}
+/* 商品结果 */
+.mmm_product {
+  height: 130px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.mmm_product .mmm_sonBox {
+  position: relative;
+  height: 100%;
+  padding-left: 100px;
+}
+.mmm_product .mmm_sonBox .mmm_photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+.mmm_product .mmm_sonBox .mmm_info {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.mmm_banner a{
+  display: block;
+}
+.mmm_product .mmm_sonBox .mmm_info .mm_index{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+}
+.mmm_product .mmm_sonBox .mmm_info .boxTitle {
+  height: 60px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.mmm_product .mmm_sonBox .mmm_info .boxTitle span {
+  color: red;
+}
+.mmm_product .mmm_sonBox .mmm_info span:nth-child(2) {
+  font-size: 12px;
+  color: #a1a1a1;
+  padding-left: 10px;
+}
+
+
+/* 底部 */
+.mmm_fontr {
+  margin-top: 30px;
+}
+.mmm_fontr li a {
+  box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  height: 35px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #666;
+}
+.mmm_fontr li img {
+  width: 15px;
+  display: inline;
+}
+.mmm_fontr_url {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 16px;
+}
+.mmm_fontr_url span {
+  color: red;
+}
+.mmm_fontr_url p {
+  padding-top: 5px;
+}
+
+/* 点击上下页 */
+.page{
+  height: 35px;
+  width: 90%;
+  /* background: pink; */
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10px;
+}
+.page .mmm_prve a,
+.page .mmm_next a{
+  display: block;
+  width: 82px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #d5d5d5;
+}
+#select{
+  position: absolute;
+  left: 40%;
+  top: 0;
+  width: 95px;
+  height: 36px;
+}

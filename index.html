@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="mmm_logo fl">
+      </div>
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="mmm_search">
+      <input type="text" placeholder="请输入你想比对的商品">
+      <input type="button" value="搜索">
+    </div>
+    <!-- 引 -->
+    <div class="l"></div>
+    <!-- 导航 -->
+    <div class="mmm_nav clearfix">
+        <!-- 渲染坑 导航-->
+    </div>
+    <!-- 主体部分 -->
+    <div class="mmm_main">
+      <!-- 超值折扣推荐 -->
+      <div class="mmm_title_head">
+        <span>超值折扣推荐</span>
+        <span class="fr">
+          <img src="./images/more.png" alt="">
+        </span>
+      </div>
+      
+      <!-- 商品结果 -->
+      <div class="mmm_banner">
+          <!-- 商品渲染 坑 -->
+
+
+      </div>
+
+      
+      <!-- 更多 -->
+      <div class="mmm_moreInfo">
+        <a href="moneyctrl.html">更多优惠信息 »</a>
+      </div>
+    </div>
+
+    <!--   复用  超值折扣推荐 -->
+    <div class="mmm_title_head">
+      <span>品牌排行</span>
+      <span class="fr">
+        <img src="./images/more.png" alt="">
+      </span>
+    </div>
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</body>
+<!-- 导航 -->
+<script type="text/html" id="navId_tpl">
+  <ul>
+  {{each result v i}}
+    <li>
+      <!-- <a href="#"> -->
+      <a href="{{v.titlehref}}.html">
+        <img src="./images/{{v.img}}" alt="">
+        <p>{{v.name}}</p>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</script>
+
+<!-- 商品折扣模板 -->
+<script type="text/html" id="discount_tpl">
+  {{each result v i}}
+    <a href="moneyproduct.html?productId={{v.productId}}">
+      <div class="mmm_product">
+          <div class="mmm_sonBox">
+            <div class="mmm_photo">
+              {{@v.productImgSm}}
+            </div>
+            <div class="mmm_info">
+              <div class="boxTitle">
+                <p>{{v.productName}}
+                  <span>{{v.productPinkage}}</span>
+                </p>
+              </div>
+              <span>{{v.productFrom}} | 10-25 14:10</span>
+            </div>
+          </div>
+      </div>
+    </a>
+      
+      <!-- <div class="mm_index"><a href="#">{{v.productComCount}}</a></div> -->
+  {{/each}}
+
+
+</script>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

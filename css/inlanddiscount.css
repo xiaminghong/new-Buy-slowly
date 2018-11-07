@@ -1,0 +1,32 @@
+.body_X{
+  width: 100%;
+  height: 1000px;
+}
+.body_X li{
+  float: left;
+  width: 50%;
+  height: 249px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 20px;
+ }
+ .body_X li .imgis{
+   width: 140px;
+   height: 140px;
+   margin: 0 auto;
+ }
+ .body_X li .box_bt {
+   margin-top: 10px;
+   color: #000;
+   width: 100%;
+   height: 36px;
+ }
+ .body_X li .box_bt h3{
+  font-size: 14px;
+  font-weight: 700;
+ }
+ .body_X li p{
+   color: orange;
+   margin-bottom: 5px;
+ }

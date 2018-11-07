@@ -1,0 +1,174 @@
+.mmm_header{
+  max-width: 640px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+.mian_body{
+  width: 100%;
+  /* height: 2000px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.mmm_title{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.span{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.mmm_soy{
+  width: 100%;
+  /* background: pink; */
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+.mmm_soy .soy_right{
+  width: 120px;
+  height: 120px;
+  /* background: #000; */
+  margin-left: 30px;
+}
+.mmm_soy  p{
+  font-size: 16px;
+}
+
+
+.big_soy{
+  width: 320px;
+  height: 320px;
+  /* border: 1px solid #000; */
+  margin: 10px;
+}
+.mmm_uls{
+  width: 136px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+.mmm_uls li{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+strong{
+  float: right;
+}
+
+.mmm_uls li strong{
+  color: orange;
+}
+/* 购买 */
+.mmm_go{
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+}
+.mmm_go .mmm_go_n{
+  
+  background: orange;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+}
+/* 二维码图 */
+.mmm_imgs{
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  background: #f2f2f2;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.mmm_imgs .mmm_images{
+  width: 100%;
+  height: 100%;
+}
+.mmm_imgs .mmm_images img{
+  width: 100%;
+  height: 100%;
+}
+.pl{
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #000;
+}
+.mmm_textarea{
+  width: 100%;
+  height: 100px;
+  /* padding: 10px; */
+  border: 2px solid #ccc;
+  position: relative;
+}
+.mmm_textarea .mmm_textarea_btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 36px;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  background: #f1f1f1;
+}
+.mmm_textarea .mmm_textarea_btn button{
+  height: 100%;
+  width: 100px;
+  /* background: orange; */
+  font-size: 16px;
+  color: #fff;
+}
+.mmm_newest{
+  height: 80px;
+  width: 100%;
+  /* background: pink; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 40px;
+}
+.mmm_newest .mmm_newest_l{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.mmm_newest .mmm_newest_l img{
+  border-radius: 50%;
+  
+}
+.mmm_newest_r{
+  padding-left: 10px;
+
+}
+.smm{
+  width: 100%;
+  height: 20px;
+}
+.smm span:first-child{
+  color: #5997c0;
+}

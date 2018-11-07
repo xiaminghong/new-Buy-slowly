@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+
+<body>
+
+
+  <!-- 头部 -->
+    <div class="mmm_header">
+        <div class="mmm_arrows fl">
+          <a href="javascript:history.back()"> <</a>
+        </div>
+        <div class="mmm_discounts fl">
+          国内折扣
+        </div>
+        <div class="mmm_download fr">
+        </div>
+    </div>
+      
+  <div class="mmm_container"></div>
+
+  
+    <!-- 渲染 -->
+
+    <!-- <div class="mian_body">
+      <h3 class="mmm_title">移动端凑单品：海天 鲜味 生抽 1.28L</h3>
+      <div class="span">
+        <span>京东商城</span>
+        <span>10-25 14:10</span>
+        <span>小编烟花/慢慢买</span>
+      </div>
+       图片 
+      <div class="mmm_soy clearfix">
+        <div class="soy_right fr">
+          <img src="./images/categorylist.jpg" alt="">
+        </div>
+        <p>海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。</p>
+        <p>目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。</p>
+
+      </div>
+      <div class="big_soy">
+        <img src="./images/categorylist.jpg" alt="">
+      </div>
+      nav 
+      <div class="mmm_uls">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fl">北京</span>
+              <strong class="fr">有货</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fl">北京</span>
+              <strong class="fr">有货</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fl">北京</span>
+              <strong class="fr">有货</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fl">北京</span>
+              <strong class="fr">有货</strong>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="mmm_go">
+        <div class="mmm_go_n">
+            前往购买
+        </div>
+      </div>
+      <div class="mmm_imgs">
+        <div class="mmm_images">
+          <img src="./images/gengduo.png" alt="">
+        </div>
+      </div>
+      <p class="pl">发表评论</p>
+      <div class="mmm_textarea">
+        <div class="mmm_textarea_btn">
+          <button class="fr">
+            发布品论
+          </button>
+        </div>
+      </div>
+      <p class="pl">最新评论</p>
+      <div class="mmm_newest">
+        <div class="mmm_newest_l">
+          <img src="./images/categorylist.jpg" alt="">
+        </div>
+        <div class="mmm_newest_r">
+          <div class="smm">
+              <span class="fl">赶鸭子上架</span><span class="fr">2016/10/25 14:18:45</span>
+          </div>
+          <p>比超市便宜了几块</p>
+        </div>
+      </div> -->
+
+
+    </div>
+
+
+
+
+
+
+     <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址  -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+  
+
+</body>
+
+
+
+<script type="text/html" id="moneyproduct">
+
+    <!-- 渲染 -->
+    {{each result v i}}
+
+    <div class="mian_body">
+      <h3 class="mmm_title">{{v.productName}}</h3>
+      <div class="span">
+        <span>{{v.productFrom}}</span>
+        <span>{{v.productTime}}</span>
+        <span>{{v.productTips}}</span>
+      </div>
+      <!-- 图片 -->
+      <div class="mmm_soy clearfix">
+        <div class="soy_right fr">
+          <!-- <img src="./images/categorylist.jpg" alt=""> -->
+          {{@ v.productImg2}}
+        </div>
+        <p>{{v.productInfo}}</p>
+        <p>{{v.productInfo1}}</p>
+
+      </div>
+      <div class="big_soy">
+        <!-- <img src="./images/categorylist.jpg" alt=""> -->
+        {{@ v.productImgSm}}
+      </div>
+      <!-- nav -->
+      <div class="mmm_uls">
+       {{@ v.productCity}}
+
+      </div>
+
+      <div class="mmm_go">
+        <div class="mmm_go_n">
+            前往购买
+        </div>
+      </div>
+      <div class="mmm_imgs">
+        <div class="mmm_images">
+          <img src="./images/mmbweixin2.png" alt="">
+        </div>
+      </div>
+      <p class="pl">发表评论</p>
+      <div class="mmm_textarea">
+        <div class="mmm_textarea_btn">
+          <button class="fr">
+            发布品论
+          </button>
+        </div>
+      </div>
+      <p class="pl">最新评论</p>
+      <div class="mmm_newest">
+        <div class="mmm_newest_l">
+          <img src="./images/categorylist.jpg" alt="">
+        </div>
+        <div class="mmm_newest_r">
+          <div class="smm">
+              <span class="fl">赶鸭子上架</span><span class="fr">2016/10/25 14:18:45</span>
+          </div>
+          <p>比超市便宜了几块</p>
+        </div>
+      </div>
+      <!-- {{@ v.productComment}} -->
+      {{/each}}
+    </script>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+
+<script src="./js/Website.js"></script>
+<script src="./js/moneyproduct.js"></script>
+
+</html>

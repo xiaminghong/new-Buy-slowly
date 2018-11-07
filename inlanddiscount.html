@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <link rel="stylesheet" href="./css/inlanddiscount.css">
+
+</head>
+
+<body>
+
+<div class="mmm_container">
+  <!-- 头部 -->
+    <div class="mmm_header">
+        <div class="mmm_arrows fl">
+          <a href="javascript:history.back()"> <</a>
+        </div>
+        <div class="mmm_discounts fl">
+          国内折扣
+        </div>
+        <div class="mmm_download fr">
+        </div>
+      </div>
+
+
+      <div class="body_X">
+        <ul>
+          <!-- <li>
+            <a href="#">
+              <div class="imgis">
+                  <img src="./images/ic_coudanpin.png" alt="">
+              </div>
+              <div class="box_bt">
+                <h3>西域美农新疆特产五星和田红枣250g*2</h3>
+              </div>
+
+                <p>19.8元(5件99元)</p>
+                <span>京东商城 | 10-22 13:28</span>
+            </a>
+          </li> -->
+          
+        </ul>
+      </div>
+
+  
+    
+
+
+
+
+
+
+     <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址  -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+</body>
+
+<script type="text/html" id="inlanddiscount_tpl">
+  {{each result v i}}
+      <li>
+        <a href="discount.html?productid={{v.productId}}">
+          <div class="imgis">
+              <!-- <img src="./images/ic_coudanpin.png" alt=""> -->
+              {{@ v.productImg}}
+          </div>
+          <div class="box_bt">
+            <h3>{{v.productName}}</h3>
+          </div>
+
+            <p>{{v.productPrice}}</p>
+            <span>{{v.productFrom}} {{v.productTime}}</span>
+        </a>
+      </li>
+      {{/each}}
+      
+</script>
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+
+<script src="./js/inlanddiscount.js"></script>
+
+
+</html>
