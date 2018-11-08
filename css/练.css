@@ -1,0 +1,73 @@
+.cu-content-pl{
+  width: 100%;
+}
+.tit{
+  height: 30px;
+  line-height: 30px;
+  max-width: 640px;
+}
+.cu-content-pl .reply .form textarea {
+  width: 100%;
+  /* resize: none; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+  line-height: 22px;
+  font-size: 14px;
+  outline: 0;
+  color: #000;
+  height: 68px;
+}
+#ctl00_ContentBody_Button1{
+  float: right;
+  width:70px;
+  height: 30px;
+  background: orange;
+  color: #fff;
+}
+.cu-content-pl .reply .form {
+  border: 2px solid #ECEAE8;
+  border-radius: 2px;
+  padding: 4px 0 0 4px;
+  background-color: #fff;
+  position: relative;
+  width: 98%;
+  margin: 0px auto;
+}
+.list{
+  /* height: 80px; */
+  width: 100%;
+}
+.userimg{
+  float: left;
+}
+.userimg img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.con{
+  /* width: 100%; */
+  /* float: left; */
+  margin-left: 30px;
+  overflow: hidden;
+}
+.username{
+  color: orange;
+  float: left;
+}
+.con .time{
+  float: right;
+}
+
+.cu-content-pl .list ul li {
+  padding: 18px 10px;
+  background-color: #FFFFFF;
+}
+.content img{
+  width: 20px;
+  height: 20px;
+}
+
+
+

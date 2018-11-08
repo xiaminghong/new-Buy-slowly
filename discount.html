@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+
+<body>
+
+
+  <!-- 头部 -->
+  <div class="mmm_header">
+    <div class="mmm_arrows fl">
+      <a href="javascript:history.back()">
+        <</a>
+    </div>
+    <div class="mmm_discounts fl">
+      国内折扣
+    </div>
+    <div class="mmm_download fr">
+    </div>
+  </div>
+
+  <div class="mmm_container"></div>
+
+
+  <!-- 渲染 -->
+
+
+
+
+
+
+
+  <!-- 底部 -->
+  <div class="mmm_fontr">
+    <ul class="clearfix">
+      <li>
+        <a href="#">登录</a>
+      </li>
+      <li>
+        <a href="#">注册</a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 底部网址  -->
+  <div class="mmm_fontr_url">
+    <p>
+      <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+  </div>
+
+
+
+</body>
+
+<script type="text/html" id="discount_tpl">
+
+  {{each result v i}}
+
+  <div class="mian_body">
+    <h3 class="mmm_title">{{v.productName}}</h3>
+    <div class="span">
+      <span>{{v.productFrom}}</span>
+      <span>{{v.productTime}}</span>
+      <span>{{v.productTips}}</span>
+    </div>
+    <!-- 图片 -->
+    <div class="mmm_soy clearfix">
+      <div class="soy_right fr">
+        <!-- <img src="./images/categorylist.jpg" alt=""> -->
+        {{@ v.productImg}}
+      </div>
+      <p>{{v.productInfo}}</p>
+      <p>{{v.productInfo1}}</p>
+
+    </div>
+    <div class="big_soy">
+      <!-- <img src="./images/categorylist.jpg" alt=""> -->
+      {{@ v.productImg}}
+    </div>
+    <!-- nav -->
+    <div class="mmm_uls">
+      <!-- {{@ v.productCity}} -->
+
+    </div>
+
+    <div class="mmm_go">
+      <div class="mmm_go_n">
+        前往购买
+      </div>
+    </div>
+    <div class="mmm_imgs">
+      <div class="mmm_images">
+        <img src="./images/mmbweixin2.png" alt="">
+      </div>
+    </div>
+    <p class="pl">发表评论</p>
+    <div class="mmm_textarea">
+      <div class="mmm_textarea_btn">
+        <button class="fr">
+          发布品论
+        </button>
+      </div>
+    </div>
+    <p class="pl">最新评论</p>
+    <div class="mmm_newest">
+      <div class="mmm_newest_l">
+        <img src="./images/categorylist.jpg" alt="">
+      </div>
+      <div class="mmm_newest_r">
+        <div class="smm">
+            <span class="fl">赶鸭子上架</span><span class="fr">2016/10/25 14:18:45</span>
+        </div>
+        <p>比超市便宜了几块</p>
+      </div>
+    </div>
+    <!-- {{@ v.productComment}} -->
+     {{/each}}
+
+</script>
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+
+<script src="./js/Website.js"></script>
+
+<script src="./js/discount.js"></script>
+
+</html>

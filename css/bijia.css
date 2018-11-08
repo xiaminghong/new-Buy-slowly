@@ -1,0 +1,142 @@
+.mmm_nav_strip{
+  box-sizing: border-box;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  width: 100%;
+  background: -webkit-linear-gradient(#fff,#ccc); 
+}
+.mmm_nav_strip li{
+  float: left;
+}
+.mmm_nav_strip li a{
+  color: #000;
+
+}
+.mmm_nav_strip ul>a{
+  color: #000;
+  margin-top: 5px;
+  margin-right: 10px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: 50px;
+  text-align: center;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.product-bijia{
+  width: 400px;
+  height: 400px;
+  /* background: #000; */
+  position: relative;
+}
+.product-bijia_top{
+  height: 200px;
+  width: 100%;
+  /* background: pink; */
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.product-bijia_bottom{
+  height: 200px;
+  width: 100%;
+  /* background: orange; */
+}
+.product-bijia_bottom img{
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
+.Collection{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: rgb(102, 255, 0);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+}
+/* 导航 */
+.mmm_uls{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+  background:orange ;
+}
+.mmm_uls li{
+  float: left;
+  box-sizing: border-box;
+  width: 33.3%;
+  border: 1px solid rgb(255, 94, 0);
+}
+.mmm_uls li a{
+  color: #fff;
+  display: block;
+}
+/* 临时 */
+.temp-box{
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #f1f1ff;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.temp-box img{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+/* 笔记 */
+.mmm_note{
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #000;
+}
+/* 网友评价 */
+._product{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #ccc;
+}
+/* 评价大板块 */
+.web_product{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #000;
+}
+.web_product li{
+  border-bottom: 1px solid #ccc;
+}
+
+.web_product p{
+  margin-bottom: 5px;
+
+}
+
+.web_product .web_product_top{
+  width: 100%;
+  height: 45px;
+  /* background: pink; */
+  overflow: hidden;
+}
+.web_product .web_product_top>p:first-child{
+  margin-top: 5px;
+}
+
+

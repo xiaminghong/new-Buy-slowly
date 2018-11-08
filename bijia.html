@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/bijia.css">
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <a href="index.html">
+        <div class="mmm_logo fl">
+        </div>
+      </a>
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="mmm_search">
+      <input type="text" placeholder="请输入你想比对的商品">
+      <input type="button" value="搜索">
+    </div>
+
+
+    <!-- 导航条 -->
+    <div class="mmm_nav_strip">
+      <ul class="clearfix">
+        <!-- 坑 -->
+        <li>
+          <a href="index.html">首页></a>
+        </li>
+        <li>
+          <a href="category.html">全部分类></a>
+        </li>
+        <li>
+          <a href="javascript:;">电视></a>
+         
+        </li>
+        <a href="#" class="fr">筛选</a>
+      </ul>
+    </div>
+
+    <!-- 大盒子 -->
+    <div class="mmm_bigBOx">
+
+        <!-- <div class="product-bijia">
+            <div class="product-bijia_top">
+              <p>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</p>
+            </div>
+            <div class="product-bijia_bottom">
+              <img src="./images/categorylist.jpg" alt="">
+            </div>
+            <div class="Collection">
+              收藏
+            </div>
+      
+          </div>
+           导航 
+          <div class="mmm_uls">
+            <ul>
+              <li>
+                <a href="#">比价购买</a>
+              </li>
+              <li>
+                <a href="#">产品参数</a>
+              </li>
+              <li>
+                <a href="#">评论2322</a>
+              </li>
+      
+            </ul>
+          </div>
+          <div class="temp-box">
+      
+          </div> -->
+    </div>
+  
+
+    <div class="mmm_note">
+      * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+    <!-- 网友评价 -->
+    <div class="_product">
+      网友评价
+    </div>
+    <!-- 评价大板块 -->
+    <div class="web_product">
+      <ul>
+        <!-- <li>
+          <div class="web_product_top">
+            <p><span>b***r</span><span class="fr">2016/10/1</span></p>
+            <p class="fr">购买自：京东商城</p>
+          </div>
+          <p>使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线</p>
+        </li> -->
+      </ul>
+    </div>
+
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul class="clearfix">
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</body>
+
+<script type="text/html" id="bijia_tpl">
+  {{each result v i}}
+    <div class="product-bijia">
+        <div class="product-bijia_top">
+          <p>{{v.productName}}</p>
+        </div>
+        <div class="product-bijia_bottom">
+          <!-- <img src="./images/categorylist.jpg" alt=""> -->
+          {{@ v.productImg}}
+        </div>
+        <div class="Collection">
+          收藏
+        </div>
+  
+      </div>
+       <!-- 导航  -->
+      <div class="mmm_uls">
+        <ul>
+          <li>
+            <a href="#">比价购买</a>
+          </li>
+          <li>
+            <a href="#">产品参数</a>
+          </li>
+          <li>
+            <a href="#">评论2322</a>
+          </li>
+        </ul>
+      </div>
+      <div class="temp-box">
+          {{@ v.bjShop}}
+      </div>
+      {{/each}}
+</script>
+
+<!-- 网友评价 -->
+<script type="text/html" id="bijia_box">
+  {{each result v i}}
+  <li>
+      <div class="web_product_top">
+        <p><span>{{v.comName}}</span><span class="fr">{{v.comTime}}</span></p>
+        <p class="fr">{{v.comFrom}}</p>
+      </div>
+      <p>{{v.comContent}}</p>
+    </li>
+    {{/each}}
+</script>
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/Website.js"></script>
+<script src="./js/bijia.js"></script>
+
+</html>

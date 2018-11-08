@@ -130,6 +130,12 @@ img {
 /* 底部 */
 .mmm_fontr {
   margin-top: 30px;
+  width: 100%;
+  
+}
+.mmm_fontr li{
+  box-sizing: border-box;
+  /* width: 33.3%; */
 }
 .mmm_fontr li a {
   box-sizing: border-box;
@@ -146,7 +152,7 @@ img {
   display: inline;
 }
 .mmm_fontr_url {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
   font-size: 16px;
 }

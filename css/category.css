@@ -44,13 +44,17 @@
 
 }
 
-.mmm_category .uls  ul li a{
-  box-sizing: border-box;
-  float: left;
-  display: block;
+.mmm_category .uls  ul li{
   height: 40px;
   line-height: 40px;
   width: 33.3%;
+  float: left;
+
+}
+.mmm_category .uls  ul li a{
+  box-sizing: border-box;
+  display: block;
+  
   text-align: center;
   border: 1px solid #ccc;
   font-weight: 400;
