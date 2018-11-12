@@ -2,6 +2,9 @@
   width: 100%;
   height: 1000px;
 }
+.mmm_main{
+  margin-bottom: 30px;
+}
 .body_X li{
   float: left;
   width: 50%;

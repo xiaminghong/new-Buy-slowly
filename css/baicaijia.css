@@ -1,0 +1,110 @@
+.mmm_header{
+  height: 40px;
+  line-height: 40px;
+  background: rgb(255, 38, 0);
+}
+.mmm_header .mmm_discounts{
+  line-height: 40px;
+}
+.mmm_header .mmm_download{
+  width: 40px;
+  height: 40px;
+}
+.mmm_header a {
+  height: 40px;
+  line-height: 40px;
+  
+}
+/* 导航 */
+.mmm_navs{
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #ccc;
+}
+
+/* li宽度为动态获取 */
+.mmm_navs ul{
+  width: 175%;
+}
+.mmm_navs li{
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+ 
+}
+.mmm_navs li a{
+  display: block;
+}
+.mmm_navs i{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+  width: 30px;
+  height: 38px;
+  background: #f2f2f2;
+}
+
+/* 主要 */
+.mmm_main{
+  width: 100%;
+  /* height: 150px; */
+  /* background: pink; */
+}
+.mmm_main .mmm_main_N{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  padding-left: 150px;
+  border-bottom: 2px solid #ccc;
+}
+.mmm_main .mmm_main_N .mmm_main_l{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 130px;
+  width: 130px;
+}
+.mmm_main .mmm_main_N .mmm_main_r{
+  height: 130px;
+  width: 100%;
+}
+.mmm_main_r .x{
+  font-size: 16px;
+  color: #000;
+}
+.mmm_main_r .red{
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-size: 22px;
+ color: red;
+}
+.mmm_main_r .red del{
+  color: #000;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.mmm_main_r>span{
+  margin-top: 20px;
+}
+.mmm_main_r>.fl{
+  border: 1px dashed red;
+  padding: 2px;
+}
+.mmm_main_r>.fr{
+  width: 60px;
+  height: 26px;
+  text-align: center;
+  background: red;
+  line-height: 26px;
+}
+.mmm_main_r>.fr a{
+  color: #fff;
+
+}

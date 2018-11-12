@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 字体图标 -->
+  <link rel="stylesheet" href="./lib/箭头/iconfont.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+
+  <link rel="stylesheet" href="./css/coupon.css">
+  <link rel="stylesheet" href="./css/couponproduct.css">
+
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="mmm_arrows fl">
+        <a href="javascript:history.back()">
+          <</a>
+      </div>
+      <div class="mmm_discounts fl">
+        优惠卷
+      </div>
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+
+    <!-- 主体部分 -->
+    <div class="xxxx">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+    <!-- 食物部分 -->
+    <div class="mmm_foodr">
+      <!-- <div class="food">
+          <div class="food_left">
+            <img src="./images/categorylist.jpg" alt="">
+          </div>
+          <div class="food_right">
+            <div>C28  分享两人餐 新奥尔良烤鸡腿堡+香辣鸡腿堡+新奥尔良烤翅2块+大薯条+百事可乐(中)+雪顶咖啡 2016年10月凭肯德基优惠券</div>
+            <p>¥ 28</p>
+            <span>有效期至10月31日</span>
+            <i class="iconfont icon-jiantou"></i>
+          </div>
+    
+          
+        </div> -->
+
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul class="clearfix">
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+
+</body>
+
+<script type="text/html" id="couponproduct_tpl">
+  {{each result v i}}
+  <div class="food">
+    <div class="food_left">
+      <!-- <img src="./images/categorylist.jpg" alt=""> -->
+      {{@ v.couponProductImg}}
+    </div>
+    <div class="food_right">
+      <div>{{v.couponProductName}}</div>
+      <p>{{v.couponProductPrice}}</p>
+      <span>{{v.couponProductTime}}</span>
+      <i class="iconfont icon-jiantou"></i>
+    </div>
+
+  </div>
+  {{/each}}
+
+</script>
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/Website.js"></script>
+<script src="./js/couponproduct.js"></script>
+
+</html>

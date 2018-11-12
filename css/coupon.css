@@ -1,0 +1,33 @@
+.mmm_header{
+  height: 40px;
+  line-height: 40px;
+  background: rgb(255, 38, 0);
+}
+.mmm_header .mmm_discounts{
+  line-height: 40px;
+}
+.mmm_header .mmm_download{
+  width: 40px;
+  height: 40px;
+}
+.mmm_header a {
+  height: 40px;
+  line-height: 40px;
+  
+}
+
+.Fried{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.Fried li{
+  float: left;
+  width: 32%;
+  text-align: center;
+}
+.Fried li img{
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}

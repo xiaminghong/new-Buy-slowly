@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 字体图标 -->
+
+  <link rel="stylesheet" href="./lib/font-icon/iconfont.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+
+  <link rel="stylesheet" href="./css/gsproduct.css">
+
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="mmm_arrows fl">
+        <a href="index.html">
+          <</a>
+      </div>
+      <div class="mmm_discounts fl">
+        凑单品
+      </div>
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+
+    <!-- 主体部分 -->
+    <div class="bigBox">
+
+      <div class="navShopping">
+        <ul>
+          <li data-id='0'>
+            <a href="#">京东
+              
+              <i class="iconfont icon-up"></i>
+
+            </a>
+          </li>
+          <li data-id='1'>
+            <a href="#">华北
+              <i class="iconfont icon-up"></i>
+            </a>
+          </li>
+          <li data-id='2'>
+            <a href="#">全部价格
+              <i class="iconfont icon-sousuo fr"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 隐藏导航 -->
+      <div class="mm_show">
+        <ul class="one hide">
+
+        </ul>
+        <ul class="two hide">
+        </ul>
+        <ul class="three hide">
+          <li>全部价格
+            <!-- <i class="iconfont icon-gou"></i> -->
+          </li>
+          
+
+        </ul>
+      </div>
+      <div class="ShoppingResult">
+        <ul class="clearfix">
+          <!-- <li>
+                <a href="#">
+                  <div class="boxhe">
+                    <img src="./images/categorylist.jpg" alt="">
+                    <p class="mult_line_ellipsis">廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                    <div class="boxhe_left fl">¥0.50</div>
+                    <div class="boxhe_right fr">去凑单
+                      
+                    </div>
+                  </div>
+                </a>
+              </li> -->
+
+        </ul>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul class="clearfix">
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+</body>
+
+
+<script type="text/html" id="gsproduct_show_one">
+  {{each result v i}}
+  <li data-shopId="{{v.shopId}}">
+    <a href="#">{{v.shopName}}</a>
+  </li>
+    {{/each}}
+</script>
+
+
+
+<script type="text/html" id="gsproduct_show_two">
+  {{each result v i}}
+  <li data-areaId="{{v.areaId}}">
+    <a href="#">{{v.areaName}}</a>
+  </li>
+  {{/each}}
+</script>
+
+
+<!-- 
+
+
+<script type="text/html" id="gsproduct_center">
+  {{each result v i}}
+  <li><a href="#">{{v.areaName}}</a></li>
+  {{/each}}
+</script> -->
+
+<script type="text/html" id="ShoppingResult_tpl">
+  {{each result v i}}
+  <li>
+    <a href="#">
+      <div class="boxhe">
+        <img src="{{v.productImg}}" alt="">
+        <p class="mult_line_ellipsis">{{v.productName}}</p>
+        <div class="boxhe_left fl">{{v.productPrice}}</div>
+        <div class="boxhe_right fr">去凑单</div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+
+</script>
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/gsproduct.js"></script>
+
+</html>

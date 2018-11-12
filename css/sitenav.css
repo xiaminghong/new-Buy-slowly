@@ -1,0 +1,26 @@
+.ShoppingNav_X{
+  background: #f1f1f1;
+}
+.ShoppingNav{
+  box-sizing: border-box;
+  width: 300px;
+  margin: 0 auto;
+  /* height: 1000px; */
+  padding: 10px;
+}
+
+.ShoppingNav li{
+  float: left;
+  border: 2px solid #ccc;
+  padding: 6px;
+  margin: 3px;
+}
+.ShoppingNav li img{
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+}
+.ShoppingNav li span{
+  font-size: 14px;
+}

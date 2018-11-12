@@ -69,5 +69,42 @@
   height: 20px;
 }
 
+/* 进度条 */
+
+.bar{
+  width: 100%;
+  height: 16px;
+  /* border: 1px solid #000; */
+}
+.bar i{
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  height: 100%;
+  width: 100px;
+  position: relative;
+  border: 1px solid red;
+  border-radius: 5px;
+  background: pink;
+}
+.bar i span{
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 14px;
+}
+.bar i em{
+  border-radius: 5px;
+  display: block;
+  height: 14px;
+  background: red;
+  
+}
+.bar b{
+  color: red;
+  margin-left: 10px;
+}
 
 

@@ -7,8 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>my-慢慢买</title>
   <link rel="stylesheet" href="./css/base.css">
-  
+  <!-- 字体图标 -->
   <link rel="stylesheet" href="./css/moneyctrl.css">
+
+  <link rel="stylesheet" href="./css/sitenav.css">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <div class="mmm_header">
       <div class="mmm_arrows fl"><a href="index.html"><</a></div>
       <div class="mmm_discounts fl">   			
-          省钱控 - 最新优惠
+          商城导航
       </div>
       <div class="mmm_download fr">
       </div>
@@ -27,27 +29,22 @@
     <!-- 搜索 -->
 
     <!-- 主体部分 -->
-    <div class="mmm_main">
-     
-      <!-- 商品结果 -->
-      <div class="mmm_banner">
-
-      </div>
-
-  
-      <!-- 点击上下页 -->
-      <div class="page">
-        <button class="mmm_prve fl"><a href="#">上一页</a></button>
-        <select name="" id="select">
-          <!-- <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option> -->
-        </select>
-        <button  class="mmm_next fr"><a href="#">下一页</a></button>
-      </div>
+    <div class="ShoppingNav_X">
+        <div class="ShoppingNav">
+            <ul class="clearfix">
+              <!-- <li>
+                <a href="#">
+                  <img src="./images/categorylist.jpg" alt="">
+                  <span>京东京东</span>
+                </a>
+              </li> -->
+              
+            </ul>
       
+          </div>
+        
     </div>
+   
 
 
     <!-- 底部 -->
@@ -72,44 +69,26 @@
       </p>
       <p>m.manmanbuy.com</p>
     </div>
-  </div>
 
 </body>
 
-
-
-<!-- 商品折扣模板 -->
-<script type="text/html" id="discount_tpl">
+<script type="text/html" id="sitenav_tpl">
   {{each result v i}}
-  <a href="moneyproduct.html?productId={{v.productId}}">
-  <div class="mmm_product">
-    <div class="mmm_sonBox">
-      <div class="mmm_photo">
-        {{@v.productImgSm}}
-      </div>
-      <div class="mmm_info">
-        <div class="boxTitle">
-          <p>{{v.productName}}
-            <span>{{v.productPinkage}}</span>
-          </p>
-        </div>
-        <span>京东商城 | 10-25 14:10</span>
-        <!-- <div class="mm_index"><a href="#">{{v.productComCount}}</a></div> -->
-      </div>
-    </div>
-  </div>
-</a>
-  {{/each}}
+  <li>
+      <a href="#">
+        <img src="{{v.navImg}}" alt="">
+        <span>{{v.navTitle}}</span>
+      </a>
+    </li>
+    {{/each}}
+
 </script>
 
-<script type="text/html" id="select_tpl">
-  {{ each list v i}}
-  <option value="{{i+1}}">{{i+1}}</option>
-  {{ /each}}
-</script>
+
+
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
-<script src="./js/common.js"></script>
 
+<script src="./js/sitenav.js"></script>
 </html>

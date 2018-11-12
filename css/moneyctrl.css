@@ -2,7 +2,9 @@ img {
   width: 100%;
   display: block;
 }
-
+.mmm_main{
+  margin-bottom: 30px;
+}
 .mmm_container {
   width: 100%;
   /* border: 1px solid #000; */
@@ -53,7 +55,7 @@ img {
 /* 下载 */
 .mmm_header .mmm_download {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 0;
   width: 50px;
   height: 50px;
@@ -131,21 +133,25 @@ img {
 .mmm_fontr {
   margin-top: 30px;
   width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
   
 }
+
 .mmm_fontr li{
-  box-sizing: border-box;
-  /* width: 33.3%; */
-}
-.mmm_fontr li a {
   box-sizing: border-box;
   float: left;
   width: 33.3%;
   height: 35px;
   line-height: 30px;
-  font-size: 16px;
   text-align: center;
   border: 1px solid #666;
+}
+.mmm_fontr li a {
+  display: block;
+  
+  font-size: 16px;
 }
 .mmm_fontr li img {
   width: 15px;

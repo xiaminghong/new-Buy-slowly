@@ -1,7 +1,9 @@
 
 var productid=getSearch('productid');
 console.log(productid);
-
+var category=getSearch('category');
+console.log(category);
+$('.mmm_nav_strip ul>a').text(category);
 
 
 $.ajax({

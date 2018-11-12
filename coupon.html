@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 字体图标 -->
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+  <!-- <link rel="stylesheet" href="./css/baicaijia.css"> -->
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="mmm_arrows fl"><a href="index.html"><</a></div>
+      <div class="mmm_discounts fl">   			
+          优惠卷
+      </div>
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+
+    <!-- 主体部分 -->
+    <div class="Fried">
+      <ul class="clearfix">
+        <!-- <li>
+          <a href="#">
+            <img src="./images/categorylist.jpg" alt="">
+            <p>肯德基</p>
+          </a>
+        </li>
+        -->
+      </ul>
+    </div>
+
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul class="clearfix">
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+</body>
+<script type="text/html" id="coupon_tpl">
+  {{each result v i}}
+    <li>
+      <a href="couponproduct.html?couponid={{v.couponId}}">
+        <img src="{{@ v.couponImg}}" alt="">
+        <!-- {{@ v.couponImg}} -->
+        <p>{{v.couponTitle}}</p>
+      </a>
+    </li>
+    {{/each}}
+   
+</script>
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/coupon.js"></script>
+
+</html>

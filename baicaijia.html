@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 字体图标 -->
+  <link rel="stylesheet" href="./lib/font_9yah7aw49hi/iconfont.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <link rel="stylesheet" href="./css/练.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="mmm_arrows fl"><a href="index.html"><</a></div>
+      <div class="mmm_discounts fl">   			
+          白菜价-内部优惠卷
+      </div>
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+
+    <!-- 主体部分 -->
+
+    <div class="mmm_navs">
+      <ul class="clearfix">
+        <!-- <li>
+          <a href="#">全部</a>
+        </li> -->
+      
+      </ul>
+      <i class="iconfont icon-sousuo"></i>
+    </div>
+
+
+    <div class="mmm_main">
+      <!-- <div class="mmm_main_N">
+
+        <div class="mmm_main_l">
+          <img src="./images/categorylist.jpg" alt="">
+        </div>
+        
+        <div class="mmm_main_r">
+            <div class="x"><span class="b">[包邮]</span>双十一红包 今日开启</div>
+            <div class="red"><em>¥</em>0.0<del>¥0</del></div>
+            <div class="bar clearfix">
+              <a href="http://shop.m.taobao.com/shop/coupon.htm?activityId=27a14c9fc6bb4a48b917d567fcf8f664&amp;sellerId=2246833798" class="goquan"
+                target="_blank"></a>
+              <i>
+                <em style="width:1%;"></em>
+                <span>1%</span>
+              </i>
+              <b>已领82张</b>
+            </div>
+            <span class="fl">点此领15元优惠券</span>
+            <span class="fr">下单链接</span>
+        </div>
+      </div> -->
+
+    </div>
+     
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+</body>
+
+
+<script type="text/html" id="baicaijia_scroll">
+  {{each result v i}}
+    <li data-id='{{v.titleId}}'>
+      <a href="#">{{v.title}}</a>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="baicaijia_main">
+  {{each result v i}}
+   <div class="mmm_main_N">
+        <!-- 左 -->
+        <div class="mmm_main_l">
+          <!-- <img src="./images/categorylist.jpg" alt=""> -->
+          {{@ v.productImg}}
+        </div>
+        <!-- 右 -->
+        <div class="mmm_main_r">
+            <div class="x">{{@ v.productName}}</div>
+            <div class="red">{{@ v.productPrice}}</div>
+            {{@ v.productCouponRemain}}
+            <span class="fl">{{@ v.productCoupon}}</span>
+            <span class="fr">{{@ v.productHref}}</span>
+        </div>
+      </div>
+      {{/each}}
+</script>
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/IScroll/iscroll.js"></script>
+<script src="./js/baicaijia.js"></script>
+
+</html>

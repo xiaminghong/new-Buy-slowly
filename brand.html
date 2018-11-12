@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my-慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/brandTitle.css">
+
+  <link rel="stylesheet" href="./css/brand.css">
+
+</head>
+
+<body>
+
+  <div class="mmm_container">
+
+    <!-- 头部 -->
+    <div class="mmm_header">
+        <a href="index.html">
+          <div  class="mmm_logo fl">
+          </div>
+        </a>
+      
+      <div class="mmm_download fr">
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="mmm_search">
+      <input type="text" placeholder="请输入你想比对的商品">
+      <input type="button" value="搜索">
+    </div>
+
+    <!-- 分类 -->
+
+    <div class="mmm_nav_strip">
+      <ul class="clearfix">
+
+        <li>
+            <a href="index.html">首页></a>
+          </li>
+          <li>
+            <a href="brandTitle.html">全部分类></a>
+          </li>
+      </ul>
+    </div>
+   <div class="mmm_logo">
+     <p>哪个牌子好</p>
+   </div>
+
+   <div class="mmm_brand">
+     <ul>
+       <!-- <li>
+         <a href="#">
+           <div class="span_left">1</div>
+           <div class="span_right">
+             <p>三星平板电视</p>
+             <p>30天全网销售：242408件</p>
+           </div>
+         </a>
+       </li> -->
+     </ul>
+   </div>
+
+   
+
+
+    <!-- 底部 -->
+    <div class="mmm_fontr">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/top.jpg" alt=""> 返回顶部 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部网址 -->
+    <div class="mmm_fontr_url">
+      <p>
+        <span>手机APP下载</span> 慢慢买手机版 -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</body>
+
+<script type="text/html" id="brand_tpl">
+  {{each result v i}}
+  <li>
+      <a href="productlist.html?categoryid={{v.brandTitleId}}">
+        <div class="span_left">{{v.brandId}}</div>
+        <div class="span_right">
+          <p>{{v.brandName}}</p>
+          <p>{{v.brandInfo}}</p>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+
+
+</script>
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+
+<script src="./js/Website.js"></script>
+
+<script src="./js/brand.js"></script>
+
+</html>
